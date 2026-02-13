@@ -30,8 +30,8 @@ def get_args():
     parser.add_argument('--llm_units', default=3072, type=int)
     parser.add_argument('--l2_emb', default=0.0, type=float)
 
-    parser.add_argument('--llm_init', default=False, type=bool)
-    parser.add_argument('--gated', default=False, type=bool)
+    parser.add_argument('--llm_init', action='store_true')
+    parser.add_argument('--gated', action='store_true')
     parser.add_argument('--tau', default=1, type=float)
     parser.add_argument('--beta', default=0.005, type=float)
 
@@ -135,6 +135,7 @@ if __name__ == '__main__':
     fix_random_seed(args.seed)
 
     train(args)
+
 
 
 
