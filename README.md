@@ -41,7 +41,7 @@
 5. 运行
 
    ```python
-   python main.py
+   python main.py llm --llmi_init --gated
    ```
 
 ### Results
@@ -51,6 +51,7 @@
 |            vanilla             | 0.2124  | 0.3406 | 0.2427  | 0.4609 |
 |       vanilla + llm_init       | 0.2181  | 0.3747 | 0.2526  | 0.5115 |
 | vanilla+llm_init_gate 0.005 10 | 0.2322  | 0.3922 | 0.2657  | 0.5283 |
+
 
 
 
